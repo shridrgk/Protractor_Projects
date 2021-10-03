@@ -22,7 +22,7 @@ describe('Demo calcul9ator tests', function () {
 
         homepage.enterFirstNumber('5');
         homepage.enterSecondNumber('5');
-        homepage.clickGo1();
+        homepage.clickGo();
         homepage.VerifyResult('10');
         browser.sleep(3000)
     });
