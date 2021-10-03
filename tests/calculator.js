@@ -24,7 +24,7 @@ describe('Demo calcul9ator tests', function () {
         homepage.enterSecondNumber('5');
         homepage.clickGo1();
         homepage.VerifyResult('10');
-        browser.sleep(2000)
+        browser.sleep(3000)
     });
 
 });
