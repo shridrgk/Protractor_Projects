@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1635151657266' stop='1635151668096'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1637032654367' stop='1637032665109'>
     <name>Demo calcul9ator tests</name>
     <title>Demo calcul9ator tests</title>
     <test-cases>
-        <test-case start='1635151657267' status='passed' stop='1635151662568'>
+        <test-case start='1637032654368' status='passed' stop='1637032659291'>
             <name>addtion test</name>
             <title>addtion test</title>
             <labels/>
@@ -11,7 +11,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1635151662568' status='passed' stop='1635151668094'>
+        <test-case start='1637032659291' status='passed' stop='1637032665106'>
             <name>Addition test</name>
             <title>Addition test</title>
             <labels/>

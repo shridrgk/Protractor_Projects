@@ -1,30 +1,26 @@
 
+const using = require('jasmine-data-provider');
 let homepage = require('../Pages/homepage');
+let d = require('../tests/data.js')
 
 describe('Demo calcul9ator tests', function () {
-    it('addtion test', function () {
+    using(d.datadrive, function (data, description) {
+        it('addtion test: ' + description, function () {
 
 
-        homepage.get('http://juliemr.github.io/protractor-demo/')
 
-        homepage.enterFirstNumber('4');
-        homepage.enterSecondNumber('3');
-        homepage.clickGo();
-        homepage.VerifyResult('7');
-        browser.sleep(2000)
-    });
+            homepage.get('http://juliemr.github.io/protractor-demo/')
 
-
-    it('Addition test', function () {
+            homepage.enterFirstNumber(data.firstinput);
+            homepage.enterSecondNumber(data.secondinput);
+            homepage.clickGo();
+            homepage.VerifyResult(data.result);
+            browser.sleep(2000)
+        });
 
 
-        homepage.get('http://juliemr.github.io/protractor-demo/')
 
-        homepage.enterFirstNumber('5');
-        homepage.enterSecondNumber('5');
-        homepage.clickGo();
-        homepage.VerifyResult('10');
-        browser.sleep(3000)
-    });
+
+    })
 
 });

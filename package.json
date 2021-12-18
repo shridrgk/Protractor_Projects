@@ -1,0 +1,25 @@
+{
+  "name": "protractor_projects",
+  "version": "1.0.0",
+  "description": "testing",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "@types/jasmine": "^3.10.1",
+    "electron-chromedriver": "^15.0.0",
+    "jasmine-allure-reporter": "^1.0.2",
+    "jasmine-data-provider": "^2.2.0",
+    "protractor": "^7.0.0",
+    "protractor-html-reporter-2": "^1.0.4",
+    "protractor-jasmine2-screenshot-reporter": "^0.5.0",
+    "spectron": "^15.0.0"
+  },
+  "scripts": {
+    "webdriver-update": "webdriver-manager update",
+    "test": "protractor conf/conf.js --suite testsuite"
+  },
+  "author": "shri",
+  "license": "ISC"
+}
